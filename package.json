@@ -11,7 +11,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "dotenv-load node dist/server.js",
+    "start": "NODE_ENV=production dotenv-load node dist/server.js",
     "test": "vitest --coverage",
     "build": "tsup src/**/*.ts --format esm --sourcemap",
     "dev": "dotenv-load tsx watch src/server.ts"
