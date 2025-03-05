@@ -1,15 +1,11 @@
 /* c8 ignore start */
 import process from 'node:process'
-// Read the .env file.
-import loadEnv from 'dotenv-load'
 
 // Require the framework
 import Fastify from 'fastify'
 
 // Require library to exit fastify process, gracefully (if possible)
-import closeWithGrace from '@pake/close-with-grace'
-
-loadEnv()
+import closeWithGrace from 'close-with-grace'
 
 const {
   HOST = '127.0.0.1',
